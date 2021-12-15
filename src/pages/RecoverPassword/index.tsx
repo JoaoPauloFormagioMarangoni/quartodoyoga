@@ -3,7 +3,7 @@ import LogoImg from "../../assets/home/logo.png";
 import { MdEmail } from "react-icons/md";
 import { HiOutlineArrowSmLeft } from "react-icons/hi";
 
-export function RecoverPassword() {
+export default function RecoverPassword() {
     return (
         <BackImage>
             <Container>

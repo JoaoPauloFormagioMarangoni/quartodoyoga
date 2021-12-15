@@ -1,6 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+    :root {
+        --purple: #830985;
+        --grey: #202024;
+    }
+
     * {
         margin: 0;
         padding: 0;
@@ -20,13 +25,13 @@ export const GlobalStyle = createGlobalStyle`
     /* body {
       background: var(--background);
       -webkit-font-smoothing: antialiased;
-    }
+    } */
 
-    body, input, textarea, button {
+    /* body, input, textarea, button {
         font-family: 'Roboto', sans-serif;
-    }
+    } */
 
-    button {
+    /* button {
         cursor: pointer;
     } */
 `;
