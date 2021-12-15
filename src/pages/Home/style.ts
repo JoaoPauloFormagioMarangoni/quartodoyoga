@@ -45,6 +45,7 @@ export const ClassesForBeginners = styled.div`
             width: 300px;
             height: 300px;
             border-radius: 15px;
+            box-shadow: 5px 5px 0px 0px var(--purple);
 
             img {
                 width: 100%;
@@ -84,6 +85,13 @@ export const ClassesForBeginners = styled.div`
                         font-size: 1.4rem;
                     }
                 }
+            }
+
+            transition: all .2s;
+
+            &:active {
+                transform: translate(5px, 5px);
+                box-shadow: none;
             }
         }
     }

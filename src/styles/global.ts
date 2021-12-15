@@ -22,16 +22,11 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
-    /* body {
-      background: var(--background);
-      -webkit-font-smoothing: antialiased;
-    } */
-
-    /* body, input, textarea, button {
+    body, input, textarea, button {
         font-family: 'Roboto', sans-serif;
-    } */
+    }
 
-    /* button {
+    button {
         cursor: pointer;
-    } */
+    }
 `;

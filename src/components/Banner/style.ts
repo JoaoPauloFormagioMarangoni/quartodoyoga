@@ -29,6 +29,16 @@ export const Container = styled.div`
             margin: 20px 0;
         }
 
+        span {
+            position: relative;
+
+            &:hover .arrow {
+                opacity: 1;
+                transform: translate(40px, -50%);
+                color: var(--purple);
+            }
+        }
+
         button {
             padding: 15px 50px;
             border-radius: 10px;
@@ -43,6 +53,18 @@ export const Container = styled.div`
             &:hover {
                 filter: brightness(.9);
             }
+        }
+
+        .arrow {
+            position: absolute;
+            border-radius: 0 10px 10px 0;
+            font-size: 2.5rem;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #ffffff;
+            opacity: 0;
+            transition: all .4s;
         }
     }
 `;

@@ -26,6 +26,11 @@ export const Container = styled.article`
             a {
                 text-decoration: underline;
                 color: #ffffff;
+                transition: all .2s;
+
+                &:hover {
+                    text-decoration-color: var(--purple);
+                }
             }
         }
     }

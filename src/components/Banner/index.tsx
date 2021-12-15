@@ -1,4 +1,6 @@
 import { Container } from "./style";
+import { BsArrowRightShort } from 'react-icons/bs';
+
 
 export function Banner() {
     return (
@@ -10,7 +12,10 @@ export function Banner() {
                     e também para a prática de Yoga.
                     Sem respiração não sobrevivemos...
                 </p>
-                <button>Ler mais</button>
+                <span>
+                    <button>Ler mais</button>
+                    <BsArrowRightShort className="arrow"/>
+                </span>
             </div>
         </Container>
     );
