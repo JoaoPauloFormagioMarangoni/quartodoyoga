@@ -46,6 +46,7 @@ export const ClassesForBeginners = styled.div`
             height: 300px;
             border-radius: 15px;
             box-shadow: 5px 5px 0px 0px var(--purple);
+            cursor: pointer;
 
             img {
                 width: 100%;
