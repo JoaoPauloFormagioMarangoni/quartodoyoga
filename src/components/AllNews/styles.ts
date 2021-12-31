@@ -12,7 +12,8 @@ export const Container = styled.section`
     animation: titleLeft 1s forwards;
   }
 
-  .infinite-scroll-component {
+  /* .infinite-scroll-component */
+  .infinite {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 100px;
