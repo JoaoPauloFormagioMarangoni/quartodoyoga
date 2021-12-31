@@ -47,9 +47,6 @@ export function Header() {
           <li className={location.pathname === '/home' ? 'active' : ''}>
             <Link to="/home">{t('Pagina inicial')}</Link>
           </li>
-          <li className={location.pathname === '/about' ? 'active' : ''}>
-            <Link to="/about">{t('Sobre')}</Link>
-          </li>
           <li className={location.pathname === '/classes' ? 'active' : ''}>
             <Link to="/classes">{t('Aulas')}</Link>
           </li>

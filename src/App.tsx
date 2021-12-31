@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { About } from './pages/About'
 import Blog from './pages/Blog'
 import Classes from './pages/Classes'
 import Contact from './pages/Contact'
@@ -18,7 +17,6 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/recoverpassword" element={<RecoverPassword />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
           <Route path="/classes" element={<Classes />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
