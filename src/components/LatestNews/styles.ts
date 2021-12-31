@@ -40,6 +40,7 @@ export const Container = styled.main`
       overflow: hidden;
       border-radius: 10px;
       position: relative;
+      cursor: pointer;
 
       img {
         height: 350px;
@@ -76,6 +77,7 @@ export const Container = styled.main`
           bottom: 0;
           padding: 20px;
           color: #fff;
+          cursor: pointer;
         }
       }
 

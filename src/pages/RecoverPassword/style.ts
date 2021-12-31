@@ -103,4 +103,26 @@ export const Container = styled.div`
     top: 5%;
     right: 5%;
   }
+
+  @media (max-width: 1000px) {
+    > img {
+      width: 150px;
+      position: relative;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    > div {
+      margin: 0;
+    }
+  }
+
+  @media (max-width: 500px) {
+    > div {
+      width: 100vw;
+    }
+  }
 `

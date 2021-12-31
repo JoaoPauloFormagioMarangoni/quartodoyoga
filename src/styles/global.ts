@@ -4,6 +4,7 @@ export const GlobalStyle = createGlobalStyle`
     :root {
         --purple: #830985;
         --grey: #202024;
+        --background: #fff;
     }
 
     * {
@@ -21,6 +22,10 @@ export const GlobalStyle = createGlobalStyle`
         @media (max-width: 720px) {
             font-size: 87.5%; // 14px
         }
+    }
+
+    body {
+        background: var(--background);
     }
 
     body, input, textarea, button {

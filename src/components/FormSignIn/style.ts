@@ -51,6 +51,11 @@ export const Container = styled.form`
     color: #ffffff;
     text-align: center;
   }
+
+  @media (max-width: 700px) {
+    width: 100vw;
+    border-radius: 10px 10px 0 0;
+  }
 `
 
 export const InputConfig = styled.div`

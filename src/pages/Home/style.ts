@@ -97,11 +97,13 @@ export const ClassesForBeginners = styled.div`
     }
   }
 
-  h2.hidden, ul.hidden {
+  h2.hidden,
+  ul.hidden {
     opacity: 0;
   }
 
-  h2.show, ul.show {
+  h2.show,
+  ul.show {
     animation: slide-in 1s forwards;
   }
 
@@ -111,6 +113,18 @@ export const ClassesForBeginners = styled.div`
     }
     100% {
       opacity: 1;
+    }
+  }
+
+  @media (max-width: 940px) {
+    h2 {
+      padding: 0 20px;
+    }
+
+    ul {
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
     }
   }
 `

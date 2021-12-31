@@ -15,6 +15,13 @@ export const Container = styled.footer`
   img {
     width: 150px;
   }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 30px;
+
+    padding-bottom: 30px;
+  }
 `
 
 export const SocialMedia = styled.div`

@@ -61,6 +61,12 @@ export const Container = styled.form`
       filter: brightness(1);
     }
   }
+
+  @media (max-width: 510px) {
+    width: 100%;
+
+    border-radius: 10px 10px 0 0;
+  }
 `
 
 export const InputConfig = styled.div`

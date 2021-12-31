@@ -2,11 +2,12 @@ import { ButtonTop, Container, ScreenUser } from './style'
 import LogoImg from '../../assets/home/LogoPNG.png'
 import NoLogin from '../../assets/home/fundo-login.png'
 import { Link, useLocation } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import i18n from '../../i18n'
 
-import { IoMdArrowDropup } from 'react-icons/io';
+import { IoMdArrowDropup } from 'react-icons/io'
+import { RiMenuUnfoldLine, RiMenuFoldLine } from 'react-icons/ri'
 
 export function Header() {
   const { t } = useTranslation()
@@ -14,6 +15,7 @@ export function Header() {
 
   const [isUserActive, setIsUserActive] = useState(false)
   const [languageSelect, setLanguageSelect] = useState(2)
+  const [isOpenMenu, setIsOpenMenu] = useState(false)
 
   function handleChangeLanguage(which: number) {
     if (which === 1) {
@@ -28,7 +30,19 @@ export function Header() {
   return (
     <Container id="scroolHeader">
       <img src={LogoImg} alt="Quarto do Yoga" />
-      <nav>
+      {isOpenMenu ? (
+        <RiMenuFoldLine
+          className="openMenu"
+          onClick={() => setIsOpenMenu(!isOpenMenu)}
+        />
+      ) : (
+        <RiMenuUnfoldLine
+          className="openMenu"
+          onClick={() => setIsOpenMenu(!isOpenMenu)}
+        />
+      )}
+
+      <nav className={isOpenMenu ? 'open' : ''}>
         <ul>
           <li className={location.pathname === '/home' ? 'active' : ''}>
             <Link to="/home">{t('Pagina inicial')}</Link>

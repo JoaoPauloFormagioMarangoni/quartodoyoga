@@ -97,4 +97,17 @@ export const Container = styled.article`
       opacity: 1;
     }
   }
+
+  @media (max-width: 940px) {
+    flex-direction: column;
+    gap: 20px;
+
+    > div:last-child {
+      width: 100%;
+
+      div {
+        display: none;
+      }
+    }
+  }
 `

@@ -43,4 +43,22 @@ export const Container = styled.div`
     top: 5%;
     right: 5%;
   }
+
+  @media (max-width: 1350px) {
+    > div {
+      h2 {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+    justify-content: space-between;
+
+    > img {
+      position: relative;
+      width: 120px;
+    }
+  }
 `

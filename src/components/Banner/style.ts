@@ -27,9 +27,10 @@ export const Container = styled.div`
       font-size: 1.5rem;
       letter-spacing: 0.5px;
       line-height: 1.5;
-      width: 500px;
+      max-width: 500px;
       text-align: justify;
       margin: 20px 0;
+      padding: 0 20px 0 0;
     }
 
     span {

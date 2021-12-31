@@ -31,4 +31,29 @@ export const Container = styled.div`
     top: 5%;
     right: 5%;
   }
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+
+    > div {
+      margin: 0;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    > img {
+      width: 120px;
+      position: relative;
+      margin: 20px; 
+    }
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      margin: 0 10px;
+    }
+  }
 `

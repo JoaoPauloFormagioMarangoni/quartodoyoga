@@ -11,6 +11,10 @@ export const Container = styled.header`
     height: 100px;
   }
 
+  .openMenu {
+    display: none;
+  }
+
   nav {
     display: flex;
     align-items: center;
@@ -61,6 +65,66 @@ export const Container = styled.header`
       height: 5.5rem;
       cursor: pointer;
       z-index: 9999;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    display: block;
+    text-align: center;
+
+    > img {
+      width: 80%;
+      height: auto;
+    }
+
+    .openMenu {
+      display: block;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 2.5rem;
+      z-index: 999999;
+    }
+
+    nav {
+      z-index: 99999;
+      flex-direction: column;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      background: rgba(32, 36, 33, 0.6);
+      width: 250px;
+      padding: 70px 0 25px;
+      border-radius: 0 0 10px 0;
+      transition: left 0.5s;
+
+      &.open {
+        left: 0;
+      }
+
+      ul {
+        flex-direction: column;
+
+        padding: 10px;
+
+        li {
+          margin: 5px;
+          background: var(--grey);
+          width: 100%;
+          padding: 10px 20px;
+          border-radius: 10px;
+          transition: filter 0.2s;
+
+          &:hover {
+            filter: brightness(0.9);
+          }
+
+          a {
+            color: #fff;
+          }
+        }
+      }
     }
   }
 `
@@ -146,6 +210,21 @@ export const ScreenUser = styled.div`
   &.disabled {
     display: none;
   }
+
+  @media (max-width: 1200px) {
+    position: relative;
+    top: 0;
+    background: transparent;
+    animation: 0;
+
+    img {
+      display: none;
+    }
+
+    &.disabled {
+      display: flex;
+    }
+  }
 `
 
 export const ButtonTop = styled.a`
@@ -170,7 +249,7 @@ export const ButtonTop = styled.a`
 
   box-shadow: 0 3px 0 var(--grey);
 
-  transition: filter .2s;
+  transition: filter 0.2s;
 
   &:hover {
     filter: brightness(0.9);

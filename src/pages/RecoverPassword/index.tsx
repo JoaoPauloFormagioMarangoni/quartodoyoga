@@ -7,6 +7,7 @@ export default function RecoverPassword() {
   return (
     <BackImage>
       <Container>
+        <img src={LogoImg} alt="QdY" />
         <div>
           <h1>Recuperar senha</h1>
           <div>
@@ -19,7 +20,6 @@ export default function RecoverPassword() {
             Voltar
           </a>
         </div>
-        <img src={LogoImg} alt="QdY" />
       </Container>
     </BackImage>
   )

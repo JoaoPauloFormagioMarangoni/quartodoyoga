@@ -6,13 +6,13 @@ export default function Signin() {
   return (
     <BackImage>
       <Container>
+        <img src={LogoImg} alt="QdY" />
         <div>
           <h1>
             Entre no <span>Quarto do Yoga</span>
           </h1>
           <FormSignIn />
         </div>
-        <img src={LogoImg} alt="QdY" />
       </Container>
     </BackImage>
   )
