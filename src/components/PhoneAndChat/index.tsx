@@ -19,6 +19,7 @@ export function PhoneAndChat() {
           <a
             href="https://wa.me/19982254621"
             target="_blank"
+            rel="noreferrer"
           >
             Conversar com Lara
           </a>

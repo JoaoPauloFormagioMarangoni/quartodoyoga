@@ -4,6 +4,7 @@ import { MdOutlineDriveFileRenameOutline } from 'react-icons/md'
 import { HiOutlineArrowSmLeft } from 'react-icons/hi'
 import { useState } from 'react'
 import { Container, InputConfig } from './style'
+import { Link } from 'react-router-dom'
 
 export function FormSignUp() {
   const [isEyeOpenPassword, setIsEyeOpenPassword] = useState(false)
@@ -49,8 +50,8 @@ export function FormSignUp() {
         </div>
       </InputConfig>
       <p>
-        Ao se cadastrar, você aceita nossos <a href="#">termos de uso</a> e
-        nossa <a href="#">política de privacidade</a>.
+        Ao se cadastrar, você aceita nossos <Link to="/">termos de uso</Link> e
+        nossa <Link to="/">política de privacidade</Link>.
       </p>
       <button type="submit">Cadastrar</button>
       <a href="/" className="backPage">

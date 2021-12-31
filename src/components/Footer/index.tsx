@@ -12,16 +12,20 @@ export function Footer() {
       <SocialMedia>
         <span>Veja nossas redes sociais</span>
         <div>
-          <a href="http://www.instagram.com.br" target="_blank">
+          <a
+            href="http://www.instagram.com.br"
+            target="_blank"
+            rel="noreferrer"
+          >
             <BsInstagram className="instagram" />
           </a>
-          <a href="http://www.twitter.com.br" target="_blank">
+          <a href="http://www.twitter.com.br" target="_blank" rel="noreferrer">
             <BsTwitter className="twitter" />
           </a>
-          <a href="http://www.facebook.com.br" target="_blank">
+          <a href="http://www.facebook.com.br" target="_blank" rel="noreferrer">
             <BsFacebook className="facebook" />
           </a>
-          <a href="http://www.linkedin.com.br" target="_blank">
+          <a href="http://www.linkedin.com.br" target="_blank" rel="noreferrer">
             <BsLinkedin className="linkedin" />
           </a>
         </div>
