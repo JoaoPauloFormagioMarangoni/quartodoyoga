@@ -1,7 +1,7 @@
 import { Container } from './styles'
 import NewsImg from '../../assets/aula3.jpg'
 import { MdOutlineWatchLater } from 'react-icons/md'
-import InfiniteScroll from 'react-infinite-scroll-component'
+// import InfiniteScroll from 'react-infinite-scroll-component'
 import { useEffect, useState } from 'react'
 import api from '../../services/api'
 
@@ -15,33 +15,33 @@ interface PropsVideos {
 }
 
 export function AllNews() {
-  const [infoVideos, setInfoVideos] = useState<PropsVideos[]>([])
-  const [hasMoreVideo, setHasMoreVideo] = useState(true)
-  const [page, setPage] = useState(2)
+  // const [infoVideos, setInfoVideos] = useState<PropsVideos[]>([])
+  // const [hasMoreVideo, setHasMoreVideo] = useState(true)
+  // const [page, setPage] = useState(2)
 
-  useEffect(() => {
-    async function handleLoadingApi() {
-      const response = await api.get(
-        `http://localhost:3000/Videos?_page=1&_limit=6`,
-      )
+  // useEffect(() => {
+  //   async function handleLoadingApi() {
+  //     const response = await api.get(
+  //       `http://localhost:3000/Videos?_page=1&_limit=6`,
+  //     )
 
-      setInfoVideos(response.data)
-    }
+  //     setInfoVideos(response.data)
+  //   }
 
-    handleLoadingApi()
-  }, [])
-  async function handleFetchData() {
-    const response = await api.get(
-      `http://localhost:3000/Videos?_page=${page}&_limit=6`,
-    )
+  //   handleLoadingApi()
+  // }, [])
+  // async function handleFetchData() {
+  //   const response = await api.get(
+  //     `http://localhost:3000/Videos?_page=${page}&_limit=6`,
+  //   )
 
-    if (response.data.length === 0 || response.data.length < 6) {
-      setHasMoreVideo(false)
-    }
+  //   if (response.data.length === 0 || response.data.length < 6) {
+  //     setHasMoreVideo(false)
+  //   }
 
-    setPage(page + 1)
-    setInfoVideos([...infoVideos, ...response.data])
-  }
+  //   setPage(page + 1)
+  //   setInfoVideos([...infoVideos, ...response.data])
+  // }
   return (
     <Container>
       <h1>Todas as notícias</h1>
