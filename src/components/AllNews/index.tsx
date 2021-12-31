@@ -2,17 +2,17 @@ import { Container } from './styles'
 import NewsImg from '../../assets/aula3.jpg'
 import { MdOutlineWatchLater } from 'react-icons/md'
 // import InfiniteScroll from 'react-infinite-scroll-component'
-import { useEffect, useState } from 'react'
-import api from '../../services/api'
+// import { useEffect, useState } from 'react'
+// import api from '../../services/api'
 
-interface PropsVideos {
-  id: Number
-  imgBackground: string
-  title: string
-  description: string
-  author: string
-  date: string
-}
+// interface PropsVideos {
+//   id: Number
+//   imgBackground: string
+//   title: string
+//   description: string
+//   author: string
+//   date: string
+// }
 
 export function AllNews() {
   // const [infoVideos, setInfoVideos] = useState<PropsVideos[]>([])
