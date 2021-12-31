@@ -29,6 +29,7 @@ export const Container = styled.div`
       gap: 5px;
 
       input {
+        padding: 5px 10px;
         width: 200px;
         height: 33px;
         border-radius: 5px;
